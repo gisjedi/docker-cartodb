@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sed -i 's^yourdomain.com^${DOMAIN_NAME}^g' /cartodb/config/app_config.yml
+
 PORT=3000
 
 service postgresql start
